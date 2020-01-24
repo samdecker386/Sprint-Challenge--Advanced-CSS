@@ -1,3 +1,11 @@
+.centerColumn {
+  flex-direction: column;
+  align-items: center;
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,28 +168,37 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.nav-link {
-  text-decoration: none;
-  color: black;
-  font-size: 1.6rem;
-}
 nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #F5F5F5;
+  background: #F6F7F8;
+  border-radius: 10px;
 }
 nav h1 {
   font-size: 4rem;
 }
+@media (max-width: 500px) {
+  nav h1 {
+    padding: 2% 0;
+  }
+}
 nav .nav-links {
   display: flex;
   justify-content: space-between;
-  width: 20%;
+  width: 375px;
   padding: 1% 0 0.5% 0;
+}
+@media (max-width: 500px) {
+  nav .nav-links {
+    width: 75%;
+    padding-bottom: 2%;
+  }
 }
 nav .nav-links .nav-link {
   font-size: 1.6rem;
+  text-decoration: none;
+  color: black;
 }
 footer {
   color: #22283B;
@@ -193,6 +210,14 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro img {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 100%;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -203,6 +228,28 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -226,11 +273,31 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 4% 0 0 0;
+    margin-top: 3%;
+    border-top: 1px solid lightgray;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 90%;
+    padding-bottom: 3%;
+  }
+}
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text h3 {
+    padding-top: 3%;
+  }
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
@@ -238,12 +305,18 @@ footer {
 .home .walk .walk-text .btn {
   padding: 3% 0;
   width: 30%;
-  background: #404040;
+  background: #454A59;
   font-size: 1.8rem;
   text-align: center;
   color: white;
   border-radius: 5px;
   text-decoration: bold;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    padding: 5% 0;
+    width: 100%;
+  }
 }
 .home .walk .walk-text .btn:hover {
   background: gray;
@@ -252,6 +325,12 @@ footer {
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 90%;
+    margin: 0;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
