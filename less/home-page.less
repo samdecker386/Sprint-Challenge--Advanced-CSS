@@ -3,6 +3,14 @@
 .home {
 
   .intro {
+    border-radius: 5px;
+    animation-name: bg-change;
+    animation-duration: 5s;
+
+    @keyframes bg-change {
+      from {background-color: white;}
+      to {background-color: @porcelain;}
+    }
 
     img {
       width: 100%;
@@ -60,6 +68,14 @@
 
   .visit-planets {
     padding: 15px;
+    border-radius: 5px;
+    animation-name: bg-change2;
+    animation-duration: 5s;
+
+    @keyframes bg-change2 {
+      from {background-color: white;}
+      to {background-color: @porcelain;}
+    }
 
     h3 {
       margin-top: 11px;
@@ -75,6 +91,14 @@
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     .flexCenter;
+    border-radius: 5px;
+    animation-name: bg-change2;
+    animation-duration: 5s;
+
+    @keyframes bg-change2 {
+      from {background-color: white;}
+      to {background-color: @porcelain;}
+    }
 
     @media @phone {
       flex-direction: column-reverse;

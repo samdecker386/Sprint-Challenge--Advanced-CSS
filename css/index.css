@@ -174,6 +174,9 @@ nav {
   align-items: center;
   background: #F6F7F8;
   border-radius: 10px;
+  position: fixed;
+  width: 100%;
+  opacity: 0.5;
 }
 nav h1 {
   font-size: 4rem;
@@ -200,6 +203,9 @@ nav .nav-links .nav-link {
   text-decoration: none;
   color: black;
 }
+.nav-space {
+  height: 85px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -209,6 +215,19 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro {
+  border-radius: 5px;
+  animation-name: bg-change;
+  animation-duration: 5s;
+}
+@keyframes bg-change {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #F6F7F8;
+  }
 }
 .home .intro img {
   width: 100%;
@@ -259,6 +278,17 @@ footer {
 }
 .home .visit-planets {
   padding: 15px;
+  border-radius: 5px;
+  animation-name: bg-change2;
+  animation-duration: 5s;
+}
+@keyframes bg-change2 {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #F6F7F8;
+  }
 }
 .home .visit-planets h3 {
   margin-top: 11px;
@@ -272,6 +302,17 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+  border-radius: 5px;
+  animation-name: bg-change2;
+  animation-duration: 5s;
+}
+@keyframes bg-change2 {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #F6F7F8;
+  }
 }
 @media (max-width: 500px) {
   .home .walk {
